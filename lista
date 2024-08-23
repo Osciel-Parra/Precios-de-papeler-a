@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Precios - Tienda Escolar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .price-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .price-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .price-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .price-item h2 {
+            margin: 10px 0;
+        }
+        .price-item p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista de Precios - Tienda Escolar</h1>
+    </header>
+    <main>
+        <section class="price-list">
+            <!-- Foto copias tamaño carta blanco y negro -->
+            <div class="price-item">
+                <h2>Foto Copias Tamaño Carta Blanco y Negro</h2>
+                <p><span>Precio Unitario:</span> $1.00</p>
+                <p><span>Precio de Mayoreo (a partir de 30 copias):</span> $0.70</p>
+            </div>
+            <!-- Foto copias tamaño oficio -->
+            <div class="price-item">
+                <h2>Foto Copias Tamaño Oficio</h2>
+                <p><span>Precio Unitario:</span> $1.50</p>
+                <p><span>Precio de Mayoreo (a partir de 25 copias):</span> $1.20</p>
+            </div>
+            <!-- Impresiones a color tamaño carta -->
+            <div class="price-item">
+                <h2>Impresiones a Color Tamaño Carta</h2>
+                <p><span>Toda la Hoja:</span> $10.00</p>
+                <p><span>Mitad de Hoja:</span> $5.00</p>
+                <p><span>Un Cuarto de Hoja:</span> $3.00</p>
+            </div>
+            <!-- Goma Indra colores -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Goma+Indra+Colores" alt="Goma Indra colores">
+                <h2>Goma Indra Colores</h2>
+                <p><span>Precio:</span> $6.00</p>
+            </div>
+            <!-- Porta credenciales lisa -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Porta+Credenciales+Lisa" alt="Porta credenciales lisa">
+                <h2>Porta Credenciales Lisa</h2>
+                <p><span>Precio:</span> $15.00</p>
+            </div>
+            <!-- Porta credenciales figura -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Porta+Credenciales+Figura" alt="Porta credenciales figura">
+                <h2>Porta Credenciales Figura</h2>
+                <p><span>Precio:</span> $25.00</p>
+            </div>
+            <!-- Plumón pato -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Plumón+Pato" alt="Plumón pato">
+                <h2>Plumón Pato</h2>
+                <p><span>Precio:</span> $5.00 c/u</p>
+            </div>
+            <!-- Engrapadora mini -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Engrapadora+Mini" alt="Engrapadora mini">
+                <h2>Engrapadora Mini</h2>
+                <p><span>Precio:</span> $30.00</p>
+            </div>
+            <!-- Lapiceros figuras -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Lapiceros+Figuras" alt="Lapiceros figuras">
+                <h2>Lapiceros Figuras</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Juego geométrico grande -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Juego+Geométrico+Grande" alt="Juego geométrico grande">
+                <h2>Juego Geométrico Grande</h2>
+                <p><span>Precio:</span> $36.00</p>
+            </div>
+            <!-- Juego geométrico mediano -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Juego+Geométrico+Mediano" alt="Juego geométrico mediano">
+                <h2>Juego Geométrico Mediano</h2>
+                <p><span>Precio:</span> $30.00</p>
+            </div>
+            <!-- Juego geométrico pequeño -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Juego+Geométrico+Pequeño" alt="Juego geométrico pequeño">
+                <h2>Juego Geométrico Pequeño</h2>
+                <p><span>Precio:</span> $22.00</p>
+            </div>
+            <!-- Lápiz infinito -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Lápiz+Infinito" alt="Lápiz infinito">
+                <h2>Lápiz Infinito</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Plumón frutas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Plumón+Frutas" alt="Plumón frutas">
+                <h2>Plumón Frutas</h2>
+                <p><span>Precio:</span> $25.00 con 20 piezas</p>
+            </div>
+            <!-- Goma de colores kikomo -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Goma+de+Colores+Kikomo" alt="Goma de colores kikomo">
+                <h2>Goma de Colores Kikomo</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Block de marquilla con 50 hojas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Block+de+Marquilla" alt="Block de marquilla con 50 hojas">
+                <h2>Block de Marquilla con 50 Hojas</h2>
+                <p><span>Precio:</span> $65.00</p>
+            </div>
+            <!-- Libreta apuntes espiral mini -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Libreta+Apuntes+Espiral+Mini" alt="Libreta apuntes espiral mini">
+                <h2>Libreta Apuntes Espiral Mini</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Libreta espiral mini -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Libreta+Espiral+Mini" alt="Libreta espiral mini">
+                <h2>Libreta Espiral Mini</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Puntillas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Puntillas" alt="Puntillas">
+                <h2>Puntillas</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Hoja milimétrica -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Hoja+Milimétrica" alt="Hoja milimétrica">
+                <h2>Hoja Milimétrica</h2>
+                <p><span>Precio:</span> $2.00</p>
+            </div>
+            <!-- Globo de látex -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Globo+de+Látex" alt="Globo de látex">
+                <h2>Globo de Látex</h2>
+                <p><span>Precio:</span> $2.00 cada uno</p>
+            </div>
+            <!-- Calculadora científica -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Calculadora+Científica" alt="Calculadora científica">
+                <h2>Calculadora Científica</h2>
+                <p><span>Precio:</span> $115.00</p>
+            </div>
+            <!-- Compas metálico -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Compás+Metálico" alt="Compás metálico">
+                <h2>Compás Metálico</h2>
+                <p><span>Precio:</span> $28.00</p>
+            </div>
+            <!-- Compas de plástico -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Compás+de+Plástico" alt="Compás de plástico">
+                <h2>Compás de Plástico</h2>
+                <p><span>Precio:</span> $19.00</p>
+            </div>
+            <!-- Transportador 180° -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Transportador+180°" alt="Transportador 180°">
+                <h2>Transportador 180°</h2>
+                <p><span>Precio:</span> $5.00</p>
+            </div>
+            <!-- Transportador 360° -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Transportador+360°" alt="Transportador 360°">
+                <h2>Transportador 360°</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Folder de costilla -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Folder+de+Costilla" alt="Folder de costilla">
+                <h2>Folder de Costilla</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Lapicero tinta fina -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Lapicero+Tinta+Fina" alt="Lapicero tinta fina">
+                <h2>Lapicero Tinta Fina</h2>
+                <p><span>Precio:</span> $8.00</p>
+            </div>
+            <!-- Broches de mariposa -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Broches+de+Mariposa" alt="Broches de mariposa">
+                <h2>Broches de Mariposa</h2>
+                <p><span>Precio:</span> $3.00</p>
+            </div>
+            <!-- Postick chico -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Postick+Chico" alt="Postick chico">
+                <h2>Postick Chico</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Papel picado -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Papel+Picado" alt="Papel picado">
+                <h2>Papel Picado</h2>
+                <p><span>Precio:</span> $5.00 cada hoja</p>
+            </div>
+            <!-- Broche vaco -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Broche+Vaco" alt="Broche vaco">
+                <h2>Broche Vaco</h2>
+                <p><span>Precio:</span> $5.00</p>
+            </div>
+            <!-- Pliego mica -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pliego+Mica" alt="Pliego mica">
+                <h2>Pliego Mica</h2>
+                <p><span>Precio:</span> $20.00</p>
+            </div>
+            <!-- Regla madera y plástico flexible -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Regla+Madera+y+Plástico" alt="Regla madera y plástico flexible">
+                <h2>Regla Madera y Plástico Flexible</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Lápiz especial de dibujo -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Lápiz+Especial+de+Dibujo" alt="Lápiz especial de dibujo">
+                <h2>Lápiz Especial de Dibujo</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Cubre bocas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Cubre+Bocas" alt="Cubre bocas">
+                <h2>Cubre Bocase</h2>
+                <p><span>Precio:</span> $3.00</p>
+            </div>
+            <!-- Hoja oficio -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Hoja+Oficio" alt="Hoja oficio">
+                <h2>Hoja Oficio</h2>
+                <p><span>Precio:</span> $0.50</p>
+            </div>
+            <!-- Hoja carta -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Hoja+Carta" alt="Hoja carta">
+                <h2>Hoja Carta</h2>
+                <p><span>Precio:</span> $1.00 por 4 hojas</p>
+            </div>
+            <!-- Hoja de color -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Hoja+de+Color" alt="Hoja de color">
+                <h2>Hoja de Color</h2>
+                <p><span>Precio:</span> $1.00</p>
+            </div>
+            <!-- Folder tamaño carta color pastel -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Folder+Tamaño+Carta+Color+Pastel" alt="Folder tamaño carta color pastel">
+                <h2>Folder Tamaño Carta Color Pastel</h2>
+                <p><span>Precio:</span> $4.00</p>
+            </div>
+            <!-- Folder tamaño carta colores brillantes -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Folder+Tamaño+Carta+Colores+Brillantes" alt="Folder tamaño carta colores brillantes">
+                <h2>Folder Tamaño Carta Colores Brillantes</h2>
+                <p><span>Precio:</span> $6.00</p>
+            </div>
+            <!-- Portaminas 0.7 mm -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Portaminas+0.7+mm" alt="Portaminas 0.7 mm">
+                <h2>Portaminas 0.7 mm</h2>
+                <p><span>Precio:</span> $12.00</p>
+            </div>
+            <!-- Sacapuntas con depósito -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Sacapuntas+con+Depósito" alt="Sacapuntas con depósito">
+                <h2>Sacapuntas con Depósito</h2>
+                <p><span>Precio:</span> $6.00</p>
+            </div>
+            <!-- Lápiz Maped 2HB -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Lápiz+Maped+2HB" alt="Lápiz Maped 2HB">
+                <h2>Lápiz Maped 2HB</h2>
+                <p><span>Precio:</span> $6.00</p>
+            </div>
+            <!-- Juego de mesa “UNO” -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Juego+de+Mesa+UNO" alt="Juego de mesa “UNO”">
+                <h2>Juego de Mesa “UNO”</h2>
+                <p><span>Precio:</span> $30.00</p>
+            </div>
+            <!-- Bolígrafo punto medio -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Bolígrafo+Punto+Medio" alt="Bolígrafo punto medio">
+                <h2>Bolígrafo Punto Medio</h2>
+                <p><span>Precio:</span> $7.00</p>
+            </div>
+            <!-- Goma shely de migajón -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Goma+Shely+de+Migajón" alt="Goma shely de migajón">
+                <h2>Goma Shely de Migajón</h2>
+                <p><span>Precio:</span> $8.00</p>
+            </div>
+            <!-- Cinta adhesiva 12x33 cm -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Cinta+Adhesiva+12x33+cm" alt="Cinta adhesiva 12x33 cm">
+                <h2>Cinta Adhesiva 12x33 cm</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Bolígrafo de gel neón -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Bolígrafo+de+Gel+Neón" alt="Bolígrafo de gel neón">
+                <h2>Bolígrafo de Gel Neón</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Pluma gel diamantado -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pluma+Gel+Diamantado" alt="Pluma gel diamantado">
+                <h2>Pluma Gel Diamantado</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Bolígrafo mándala -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Bolígrafo+Mándala" alt="Bolígrafo mándala">
+                <h2>Bolígrafo Mándala</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Pegamento adhesivo mediano (21 g) -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pegamento+Adhesivo+Mediano+21g" alt="Pegamento adhesivo mediano (21 g)">
+                <h2>Pegamento Adhesivo Mediano (21 g)</h2>
+                <p><span>Precio:</span> $24.00</p>
+            </div>
+            <!-- Pegamento adhesivo chico (8 g) -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pegamento+Adhesivo+Chico+8g" alt="Pegamento adhesivo chico (8 g)">
+                <h2>Pegamento Adhesivo Chico (8 g)</h2>
+                <p><span>Precio:</span> $12.00</p>
+            </div>
+            <!-- Marca textos doble -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Marca+Textos+Doble" alt="Marca textos doble">
+                <h2>Marca Textos Doble</h2>
+                <p><span>Precio:</span> $15.00</p>
+            </div>
+            <!-- Colores lomery de 12 piezas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Colores+Lomery+de+12+Piezas" alt="Colores lomery de 12 piezas">
+                <h2>Colores Lomery de 12 Piezas</h2>
+                <p><span>Precio:</span> $35.00</p>
+            </div>
+            <!-- Colores doble punta Shely de 12 piezas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Colores+Doble+Punta+Shely+de+12+Piezas" alt="Colores doble punta Shely de 12 piezas">
+                <h2>Colores Doble Punta Shely de 12 Piezas</h2>
+                <p><span>Precio:</span> $65.00</p>
+            </div>
+            <!-- Colores lomery de 24 piezas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Colores+Lomery+de+24+Piezas" alt="Colores lomery de 24 piezas">
+                <h2>Colores Lomery de 24 Piezas</h2>
+                <p><span>Precio:</span> $65.00</p>
+            </div>
+            <!-- Tijera escolar Maped, pelican, etc. -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Tijera+Escolar" alt="Tijera escolar Maped, pelican, etc.">
+                <h2>Tijera Escolar (Maped, Pelican, etc.)</h2>
+                <p><span>Precio:</span> $20.00</p>
+            </div>
+            <!-- Ajedrez magnético mini -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Ajedrez+Magnético+Mini" alt="Ajedrez magnético mini">
+                <h2>Ajedrez Magnético Mini</h2>
+                <p><span>Precio:</span> $30.00</p>
+            </div>
+            <!-- Marca textos triangular chico -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Marca+Textos+Triangular+Chico" alt="Marca textos triangular chico">
+                <h2>Marca Textos Triangular Chico</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Marcador agua -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Marcador+Agua" alt="Marcador agua">
+                <h2>Marcador Agua</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Corrector cinta -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Corrector+Cinta" alt="Corrector cinta">
+                <h2>Corrector Cinta</h2>
+                <p><span>Precio:</span> $15.00</p>
+            </div>
+            <!-- Cinta Masking tape -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Cinta+Masking+Tape" alt="Cinta Masking tape">
+                <h2>Cinta Masking Tape</h2>
+                <p><span>Precio:</span> $8.00</p>
+            </div>
+            <!-- Cinta adhesiva grande 18x33 -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Cinta+Adhesiva+Grande+18x33" alt="Cinta adhesiva grande 18x33">
+                <h2>Cinta Adhesiva Grande 18x33</h2>
+                <p><span>Precio:</span> $15.00</p>
+            </div>
+            <!-- Silicon liquido chico 30 ml -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Silicón+Líquido+Chico+30ml" alt="Silicon liquido chico 30 ml">
+                <h2>Silicón Líquido Chico 30 ml</h2>
+                <p><span>Precio:</span> $15.00</p>
+            </div>
+            <!-- Pegamento liquido 35g -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pegamento+Líquido+35g" alt="Pegamento liquido 35g">
+                <h2>Pegamento Líquido 35g</h2>
+                <p><span>Precio:</span> $10.00</p>
+            </div>
+            <!-- Silicon liquido grande -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Silicón+Líquido+Grande" alt="Silicon liquido grande">
+                <h2>Silicón Líquido Grande</h2>
+                <p><span>Precio:</span> $25.00</p>
+            </div>
+            <!-- Pintura vinci -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pintura+Vinci" alt="Pintura vinci">
+                <h2>Pintura Vinci</h2>
+                <p><span>Precio:</span> $35.00</p>
+            </div>
+            <!-- Block de acuarela -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Block+de+Acuarela" alt="Block de acuarela">
+                <h2>Block de Acuarela</h2>
+                <p><span>Precio:</span> $70.00</p>
+            </div>
+            <!-- Pasta para modelar -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pasta+para+Modelar" alt="Pasta para modelar">
+                <h2>Pasta para Modelar</h2>
+                <p><span>Precio:</span> $25.00</p>
+            </div>
+            <!-- Pegamento en barra -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pegamento+en+Barra" alt="Pegamento en barra">
+                <h2>Pegamento en Barra</h2>
+                <p><span>Precio:</span> $12.00</p>
+            </div>
+            <!-- Papel lustre -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Papel+Lustre" alt="Papel lustre">
+                <h2>Papel Lustre</h2>
+                <p><span>Precio:</span> $8.00</p>
+            </div>
+            <!-- Acuarelas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Acuarelas" alt="Acuarelas">
+                <h2>Acuarelas</h2>
+                <p><span>Precio:</span> $35.00</p>
+            </div>
+            <!-- Crayones de cera 12 piezas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Crayones+de+Cera+12+Piezas" alt="Crayones de cera 12 piezas">
+                <h2>Crayones de Cera 12 Piezas</h2>
+                <p><span>Precio:</span> $20.00</p>
+            </div>
+            <!-- Crayones de cera 24 piezas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Crayones+de+Cera+24+Piezas" alt="Crayones de cera 24 piezas">
+                <h2>Crayones de Cera 24 Piezas</h2>
+                <p><span>Precio:</span> $30.00</p>
+            </div>
+            <!-- Crayones de cera 48 piezas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Crayones+de+Cera+48+Piezas" alt="Crayones de cera 48 piezas">
+                <h2>Crayones de Cera 48 Piezas</h2>
+                <p><span>Precio:</span> $45.00</p>
+            </div>
+            <!-- Plastilina 12 colores -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Plastilina+12+Colores" alt="Plastilina 12 colores">
+                <h2>Plastilina 12 Colores</h2>
+                <p><span>Precio:</span> $20.00</p>
+            </div>
+            <!-- Plastilina 24 colores -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Plastilina+24+Colores" alt="Plastilina 24 colores">
+                <h2>Plastilina 24 Colores</h2>
+                <p><span>Precio:</span> $30.00</p>
+            </div>
+            <!-- Plastilina 48 colores -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Plastilina+48+Colores" alt="Plastilina 48 colores">
+                <h2>Plastilina 48 Colores</h2>
+                <p><span>Precio:</span> $45.00</p>
+            </div>
+            <!-- Pinceles de cerdas -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pinceles+de+Cerdas" alt="Pinceles de cerdas">
+                <h2>Pinceles de Cerdas</h2>
+                <p><span>Precio:</span> $15.00</p>
+            </div>
+            <!-- Pinceles de pelo sintético -->
+            <div class="price-item">
+                <img src="https://via.placeholder.com/300?text=Pinceles+de+Pelo+Sintético" alt="Pinceles de pelo sintético">
+                <h2>Pinceles de Pelo Sintético</h2>
+                <p><span>Precio:</span> $20.00</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
